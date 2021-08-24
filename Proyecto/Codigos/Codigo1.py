@@ -26,6 +26,6 @@ for i in lista:
 for n in lista2:
     imagen = open("D:/ActividadesdeEstructurasdeDatosyAlgoritmos/sano_csv/{i}".format(i=n))
     leer_imagen = imagen.read()
-    sanos[i] = leer_imagen
-    # print(sanos)
+    sanos[n] = leer_imagen
+    print(sanos)
     imagen.close()
