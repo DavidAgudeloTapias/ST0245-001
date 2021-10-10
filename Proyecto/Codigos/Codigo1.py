@@ -19,7 +19,7 @@ for i in lista:
     imagen = open("D:/ActividadesdeEstructurasdeDatosyAlgoritmos/enfermo_csv/{i}".format(i=i))
     leer_imagen = imagen.read()
     enfermos[i] = leer_imagen
-    # print(enfermos)
+    print(enfermos)
     imagen.close()
 
 # Recorrer la lista de ganado sano.
