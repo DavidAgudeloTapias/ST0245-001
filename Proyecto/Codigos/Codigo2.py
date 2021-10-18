@@ -13,12 +13,12 @@ def interpolacionKNN(img,dstH,dstW):
             retimg[i,j]=img[scrx-1,scry-1]
     return retimg
 
-lista = os.listdir("D:/Estudio/EAFIT/Segundo Semestre/EstructurasdeDatosyAlgoritmos/enfermo_csv")
+lista = os.listdir("D:/ActividadesdeEstructurasdeDatosyAlgoritmos/enfermo_csv/")
 
 for i in lista:
     # Imagen original
     print()
-    image = np.genfromtxt("D:/Estudio/EAFIT/Segundo Semestre/EstructurasdeDatosyAlgoritmos/enfermo_csv/{i}".format(i=i), delimiter=",")
+    image = np.genfromtxt("D:/ActividadesdeEstructurasdeDatosyAlgoritmos/enfermo_csv/{i}".format(i=i), delimiter=",")
     # print("El tamaño de la matriz es de " + str(image.nbytes) + " bytes.") Esto es para ver que tasa de compresión tiene el KNN.
     print("Matriz de la imagen " + str(i))
     print()
@@ -37,11 +37,11 @@ for i in lista:
     imgplot2 = plt.imshow(imagenComprimida, cmap='gray') #Setea la imagen que se mostrara
     plt.show() #Mostrará la imagen
 
-lista2 = os.listdir("D:/Estudio/EAFIT/Segundo Semestre/EstructurasdeDatosyAlgoritmos/sano_csv")
+lista2 = os.listdir("D:/ActividadesdeEstructurasdeDatosyAlgoritmos/sano_csv")
 
 for n in lista2:
     print()
-    image = np.genfromtxt("D:/Estudio/EAFIT/Segundo Semestre/EstructurasdeDatosyAlgoritmos/sano_csv/{i}".format(i=n), delimiter=",")
+    image = np.genfromtxt("D:/ActividadesdeEstructurasdeDatosyAlgoritmos/sano_csv{i}".format(i=n), delimiter=",")
     # print("El tamaño de la matriz es de " + str(image.nbytes) + " bytes.") Esto es para ver que tasa de compresión tiene el KNN.
     print(image)
     imgplot = plt.imshow(image, cmap='gray') #Setea la imagen que se mostrara
